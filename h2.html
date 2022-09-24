@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Travel reservation form</h1>
+        <form action="info.txt" method="post">
+            <fieldset style="border: 2px solide #4238ca; background: #f6f8ff;">
+                <legend>*denotes mandatory</legend>
+                <div>
+                    <label for="name">Full name*:</label><br>
+                    <input type="text" id="name" placeholder="FirstName LastName" required><br>
+                </div><br>
+                <div>
+                    <label for="email">Email address*:</label><br>
+                    <input type="email" id="email" required><br>
+                </div><br>
+                <div>
+                    <select> Select Tour Package*:
+                        <option value="">--Select city--</option>
+                        <optgroup label="Europe">
+                            <option value="paris">Paris</option>
+                            <option value="london">London</option>
+                            <option value="rome">Rome</option>
+                        </optgroup>
+                            
+                        <optgroup label="Asia">
+                            <option value="bangkok">Bangkok</option>
+                            <option value="tokyo">Tokyo</option>
+                            <option value="beijing">Beijing</option>
+    
+                        </optgroup>
+    
+                    </select>
+                </div><br>
+                <div>
+                    <label for="date">Arrival date*:</label><br>
+                    <input type="date" id="date" placeholder="m/d/y" required><br>
+                </div><br>
+                <div>
+                    <label for="number">Number of persons*:</label><br>
+                    <input type="number" id="number" required>
+                </div><br>
+                <div>
+                    <p>What would you want to avail?*</p>
+                    <label>Boarding
+                        <input type="checkbox" name="boarding" required>
+                    </label><br>
+                    <label>Fooding
+                        <input type="checkbox" name="fooding" required>
+                    </label><br>
+                    <label>Sight seeing
+                        <input type="checkbox" name="sight" required>
+                    </label><br>
+                </div><br>
+                <div>
+                    <label for="coupon">Discount Coupon code:</label><br>
+                    <input type="number" id="coupon" required>
+                </div><br>
+                <div>
+                    <p>Terms and conditions</p>
+                    <label>
+                        <input type="radio" name="terms" required>I agree
+                    </label><br>
+                    <label>
+                        <input type="radio" name="terms" required>I disagree
+                    </label><br>
+                </div><br>
+                <div>
+                    <button type="submit">Complete reservation</button>
+                </div>    
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
