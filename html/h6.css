@@ -1,0 +1,35 @@
+#transition-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Arial, sans-serif;
+  }
+  
+  .hover {
+    border-radius: 8px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    font-size: 18px;
+    padding: 16px 24px;
+    text-align: center;
+    width: 125px;
+    height: 65px;
+    transition: width 2s, height 2s;
+  }
+
+  .hover:hover {
+    border-radius: 8px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    font-size: 18px;
+    padding: 16px 24px;
+    text-align: center;
+    width: 175px;
+    height: 100px;
+  }
